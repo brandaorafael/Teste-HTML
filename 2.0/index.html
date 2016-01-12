@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="imagens/Calculadora.png">
+		<meta charset="UTF-8">
+	</head>
+	
+	<body ng-app="app">
+
+		<header>
+
+			<div class="home_button">
+				<table>
+					<th>
+						<div class="icone_peq">
+							<img src="imagens/Calculadora_mini.png">
+						</div>
+					</th>
+					<th class="calculadora">
+						<b>Calculadora</b>
+					</th>
+				</table>
+			</div>
+
+			<div class="upper_menu">
+				<table>
+					<th>Mudanças de style</th>
+					<th>Texto livre</th>
+					<th>Valor total</th>
+				</table>
+			</div>
+
+		</header>
+
+		<corpo>
+
+			<div align="center" class="nucleo" ng-controller="CalculadoraController as calculadora">
+				<table>
+					<th>
+						<div class="icone_gnd">
+							<img src="imagens/Calculadora.png">
+						</div>
+					</th>
+				</table>
+				<input type="text" placeholder="Valor" id="valor" ng-model="calculadora.valor"><br>
+				<input type="text" placeholder="Quantidade" id="qnt" ng-model="calculadora.qnt"><br>
+				<select id="drop" ng-model="calculadora.operacao">
+					<option value="" disabled selected hidden>Operação</option>
+				  	<option value="M">Multiplicar</option>
+				  	<option value="S">Somar</option>
+				</select><br>
+				<input type="submit" value="Mostrar resultado" ng-click="calculadora.calcular()"/>
+				<div class="resultado" ng-hide="calculadora.resultado">Seu resultado aparecerá aqui</div>
+				<div class="resultado" ng-show="calculadora.resultado">{{calculadora.resultado}}</div>
+			</div>
+
+		</corpo>
+
+	</body>
+	<script src="index.js"></script>
+	<script src="angular.min.js"></script>
+	<script src="app.js"></script>
+</html>

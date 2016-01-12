@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" href="imagens/Calculadora.png">
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+
+		<header>
+
+			<div class="home_button">
+				<table>
+					<th>
+						<div class="icone_peq">
+							<img src="imagens/Calculadora_mini.png">
+						</div>
+					</th>
+					<th class="calculadora">
+						<b>Calculadora</b>
+					</th>
+				</table>
+			</div>
+
+			<div class="upper_menu">
+				<table>
+					<th>Mudanças de style</th>
+					<th>Texto livre</th>
+					<th>Valor total</th>
+				</table>
+			</div>
+
+		</header>
+
+		<corpo>
+
+			<div align="center" class="nucleo">
+				<table>
+					<th>
+						<div class="icone_gnd">
+							<img src="imagens/Calculadora.png">
+						</div>
+					</th>
+				</table>
+				<input type="text" placeholder="Valor" id="valor"><br>
+				<input type="text" placeholder="Quantidade" id="qnt"><br>
+				<select id="drop" >
+					<option value="" disabled selected hidden>Operação</option>
+				  	<option value="M">Multiplicar</option>
+				  	<option value="S">Somar</option>
+				</select><br>
+				<button type="button" onclick="calcular()">Mostrar resultado</button>
+				<div class="resultado" id="res">Seu resultado aparecerá aqui</div>
+			</div>
+
+		</corpo>
+
+	</body>
+	<script src="index.js"></script>
+</html>

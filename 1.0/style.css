@@ -1,0 +1,145 @@
+body {
+	display: block;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	background-color: #9088BF;
+	display: block;
+	width: 100%;
+	position: relative;
+	height: 100px;
+	margin: 0;
+    box-shadow: 0px 5px 20px 0px #6B61A7;
+    z-index: 1;
+}
+
+.home_button {
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+	left: 20px;
+}
+
+.home_button table{
+	height: 100%;
+}
+
+.icone_peq {
+	background-color: white;
+	padding: 5px;
+	color: #9088BF;
+	border-radius: 10px;
+}
+
+.calculadora {
+	vertical-align: middle;
+	padding: 10px;
+	margin: 10px;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: 20px;
+}
+
+.upper_menu {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	height: 100%;
+}
+
+.upper_menu table {
+	height: 100%;
+}
+
+.upper_menu table th {
+	padding: 30px;
+	height: 100%;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	transition: background-color 1s ease;
+	-webkit-transition: background-color 1s ease;
+}
+
+.upper_menu table th:hover {
+	padding: 30px;
+	height: 100%;
+	vertical-align: middle;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	background-color: #514882;
+	cursor: pointer;
+
+}
+
+corpo {
+	background-color: #786FB1;
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.icone_gnd {
+	background-color: white;
+	padding: 5px;
+	color: #9088BF;
+	border-radius: 18px;
+	margin: 50px;
+}
+
+input[type=text]{
+	height: 20px;
+	width: 250px;
+	border-radius: 5px;
+	border: 0;
+	padding: 15px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+select {
+	height: 50px;
+	width: 280px;
+	border-radius: 5px;
+	border: 0;
+	padding: 0px;
+	font-size: 18px;
+	text-align: center;
+	background-color: #23B7E5;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: 25px;
+	margin-bottom: 15px; 
+}
+
+button {
+	height: 50px;
+	width: 280px;
+	border-radius: 5px;
+	border: 0;
+	padding: 0px;
+	font-size: 18px;
+	text-align: center;
+	background-color: #23B7E5;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: 25px; 
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.resultado {
+	vertical-align: middle;
+	padding: 20px;
+	margin: 20px;
+	color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: 50px;
+}
